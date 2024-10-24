@@ -15,22 +15,29 @@
       <!-- navbar -->
       <header>
         <nav class="">
-          <div class="container nav_inner_content">
-            <a href="/">
-              <div class="logo">
-                <img src="./assets/logo.png" alt="logo" />
+          <div class="container">
+            <div class="flex gap-20 items-center justify-between navbar">
+              <a href="/">
+                <div class="logo">
+                  <img src="./assets/logo.png" alt="logo" />
+                </div>
+              </a>
+              <div class="nav_inner_content w-full">
+                <a href="">Courses <i class="fas fa-caret-down"></i></a>
+                <div class="search-input">
+                  <span class="icon"> <i class="fas fa-search"></i></span>
+                  <input type="text" placeholder="Search" />
+                </div>
+                <a href="">Services</a>
+                <a href="">About us <i class="fas fa-caret-down"></i></a>
+                <div class="auth_buttons">
+                  <button class="primary-btn">Login</button>
+                  <button class="secondary-btn">Sign up</button>
+                </div>
               </div>
-            </a>
-            <a href="">Courses <i class="fas fa-caret-down"></i></a>
-            <div class="search-input">
-              <span class="icon"> <i class="fas fa-search"></i></span>
-              <input type="text" placeholder="Search" />
-            </div>
-            <a href="">Services</a>
-            <a href="">About us <i class="fas fa-caret-down"></i></a>
-            <div class="auth_buttons">
-              <button class="primary-btn">Login</button>
-              <button class="secondary-btn">Sign up</button>
+              <div class="menu">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
           </div>
         </nav>
@@ -88,11 +95,148 @@
                 <span class="og-price text-gray">₹ 910</span>
               </div>
             </div>
-            <button class="secondary-btn">Add To Cart</button>
+            <button id="add-to-cart-btn" class="secondary-btn">
+              Add To Cart
+            </button>
             <button class="primary-btn">Buy Now</button>
           </div>
         </div>
       </section>
+      <!-- course detail -->
+      <section class="course-detail container">
+        <div class="course-detail-description">
+          <p class="text-gray">Estimated Time</p>
+          <h4>11 hours</h4>
+          <p class="text-dark">On demand video</p>
+        </div>
+        <div class="course-detail-description">
+          <p class="text-gray">Enrolled By</p>
+          <h4>463,423</h4>
+          <p class="text-dark">Students & professionals</p>
+        </div>
+        <div class="course-detail-description">
+          <p class="text-gray">Download</p>
+          <h4>5</h4>
+          <p class="text-dark">Resources</p>
+        </div>
+        <div class="course-detail-description">
+          <p class="text-gray">Full</p>
+          <h4>Lifetime</h4>
+          <p class="text-dark">Access</p>
+        </div>
+      </section>
+      <div class="about-and-learnings">
+        <!-- about course -->
+        <section class="about-course">
+          <div class="container">
+            <h1 class="section-title">
+              About this <span class="text-red">Professional course</span>
+            </h1>
+            <article>
+              <p>
+                Prepare for a career in the high-growth field of UX design, no
+                experience required. With professional training designed by
+                Google, get on the fast-track to a competitively paid job.
+              </p>
+              <p>
+                <b>User experience (UX) designers</b> focus on the interaction
+                that users have with products, like websites, apps, and physical
+                objects. They make those everyday interactions useful,
+                enjoyable, and accessible.
+              </p>
+              <p>
+                Over 7 courses, gain in-demand skills that will prepare you for
+                an entry-level job. At under 10 hours per week, you can complete
+                the certificate in less than 6 months.
+              </p>
+              <p>
+                You will create designs on paper and in digital design tools
+                like Figma and Adobe XD. By the end of the certificate program,
+                you will have a professional UX portfolio that includes three
+                end-to-end projects, so that you’re ready to apply for jobs.
+              </p>
+            </article>
+          </div>
+        </section>
+        <section class="learnings">
+          <div class="container">
+            <h1 class="section-title">
+              What You <span class="text-red">Will Learn</span>
+            </h1>
+            <div class="learning-content-container">
+              <div class="learnings-content">
+                <div class="icon bg-black text-white">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p class="">
+                  Follow the design process: empathize with users, define pain
+                  points, ideate solutions, create wireframes and prototypes,
+                  test and iterate on designs
+                </p>
+              </div>
+
+              <div class="learnings-content">
+                <div class="icon bg-red text-white">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p class="">
+                  Understand the basics of UX research, like planning research
+                  studies, conducting interviews and usability studies, and
+                  synthesizing research results
+                </p>
+              </div>
+
+              <div class="learnings-content">
+                <div class="icon bg-red text-white">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p class="">
+                  Apply foundational UX concepts, like user-centered design,
+                  accessibility, and equity-focused design
+                </p>
+              </div>
+
+              <div class="learnings-content">
+                <div class="icon bg-black text-white">
+                  <i class="fas fa-check"></i>
+                </div>
+                <p class="">
+                  Create a professional UX portfolio that includes 3 end-to-end
+                  projects: a mobile app, a responsive website, and a
+                  cross-platform experience
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal">
+        <div class="modal-inner">
+          <span
+            onclick="modalClose()"
+            class="modal-close-btn cursor-pointer p-20 modal-close-icon"
+          >
+            <i class="fas fa-xmark"></i
+          ></span>
+          <h2>The Ultimate Drawing Course - Beginner to Advance</h2>
+          <div class="flex justify-between">
+            <p>by <span>John Doe</span></p>
+            <h1 class="text-red">₹ 455</h1>
+          </div>
+          <div class="flex gap-10 modal-footer justify-end">
+            <button
+              onclick="modalClose()"
+              class="secondary-btn modal-close-btn w-full"
+            >
+              Cancel
+            </button>
+            <button onclick="modalClose()" class="primary-btn w-full">
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
