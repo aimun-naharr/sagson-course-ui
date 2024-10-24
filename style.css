@@ -430,5 +430,8 @@ nav .search-input input::placeholder {
 @media (max-width: 720px) {
   .course-detail {
     grid-template-columns: repeat(2, 1fr);
+    .course-detail-description {
+      padding: 1rem;
+    }
   }
 }
